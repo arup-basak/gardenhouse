@@ -1,0 +1,42 @@
+{
+  "name": "chat-server",
+  "version": "0.0.1",
+  "module": "index.ts",
+  "author": "Arup Basak <email.arupbasak@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "lint": "eslint .",
+    "start": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.7.7"
+  },
+  "peerDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.21.1",
+    "@socket.io/redis-adapter": "^8.3.0",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5",
+    "helmet": "^8.0.0",
+    "ioredis": "^5.4.1",
+    "morgan": "^1.10.0",
+    "prisma": "^5.21.1",
+    "redis": "^4.7.0",
+    "socket.io": "^4.8.0",
+    "socket.io-client": "^4.8.0",
+    "ts-node": "^10.9.2",
+    "uuid": "^11.0.2",
+    "zod": "^3.23.8",
+    "zod-validation-error": "^3.4.0"
+  }
+}
